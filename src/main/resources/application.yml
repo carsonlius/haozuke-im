@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: haoke-im
+  data:
+    mongodb:
+      uri: mongodb://vagrant:27017/testdb
+server:
+  port: 18081
