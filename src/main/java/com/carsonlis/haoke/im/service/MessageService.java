@@ -33,4 +33,5 @@ public interface MessageService {
      * */
     DeleteResult deleteMessage(String id);
 
+    Message getLastMessage(Long fromId, Long toId);
 }

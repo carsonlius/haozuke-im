@@ -21,6 +21,18 @@ public class MessageServiceImpl implements MessageService {
     @Autowired
     private MongoTemplate mongoTemplate;
 
+    @Override
+    public Message getLastMessage(Long fromId, Long toId) {
+
+        Criteria fromCriteria = Criteria.where("from.id").is(fromId).and("to.id").is(toId);
+        Criteria toCriteria = Criteria.where("from.id").is(toId).and("to.id").is(fromId);
+        Criteria criteria = (new Criteria()).orOperator(fromCriteria, toCriteria);
+
+        Sort sort = Sort.by(Sort.Direction.DESC, "send_date");
+        Query query = new Query(criteria).with(sort);
+        System.out.println(query);
+        return mongoTemplate.findOne(query, Message.class);
+    }
 
     @Override
     public List<Message> findListByFromAndTo(Long fromId, Long toId, Integer page, Integer rows) {
