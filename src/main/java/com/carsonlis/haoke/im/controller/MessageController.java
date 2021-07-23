@@ -24,7 +24,7 @@ public class MessageController {
        List<Message> messageList= messageService.findListByFromAndTo(fromId, toId, page, pageSize);
        messageList.forEach(message -> {
            // 变成已读
-           if (message.getStatus() == 1) {
+           if (message.getStatus() == 1 && message.getFrom().getId().equals(toId)) {
                messageService.updateMessageState(message.getId(),2);
            }
        });
