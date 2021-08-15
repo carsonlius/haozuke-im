@@ -4,5 +4,9 @@ spring:
   data:
     mongodb:
       uri: mongodb://vagrant:27017/testdb
+  rocketmq:
+    nameServer: vagrant:9876;vagrant:9877
+    producer:
+      group: haoke-im-websocket-group
 server:
   port: 18081
