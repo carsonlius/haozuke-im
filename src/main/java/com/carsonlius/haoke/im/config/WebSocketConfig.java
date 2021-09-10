@@ -1,7 +1,7 @@
-package com.carsonlis.haoke.im.config;
+package com.carsonlius.haoke.im.config;
 
-import com.carsonlis.haoke.im.interceptor.MessageHandshakeInterceptor;
-import com.carsonlis.haoke.im.websocket.MessageHandler;
+import com.carsonlius.haoke.im.interceptor.MessageHandshakeInterceptor;
+import com.carsonlius.haoke.im.websocket.MessageHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.config.annotation.EnableWebSocket;

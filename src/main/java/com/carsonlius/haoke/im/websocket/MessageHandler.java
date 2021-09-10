@@ -1,8 +1,14 @@
-package com.carsonlis.haoke.im.websocket;
+package com.carsonlius.haoke.im.websocket;
 
+<<<<<<< Updated upstream:src/main/java/com/carsonlis/haoke/im/websocket/MessageHandler.java
 import com.carsonlis.haoke.im.pojo.Message;
 import com.carsonlis.haoke.im.pojo.UserData;
 import com.carsonlis.haoke.im.service.MessageService;
+=======
+import com.carsonlius.haoke.im.pojo.Message;
+import com.carsonlius.haoke.im.pojo.UserData;
+import com.carsonlius.haoke.im.service.MessageService;
+>>>>>>> Stashed changes:src/main/java/com/carsonlius/haoke/im/websocket/MessageHandler.java
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.rocketmq.spring.annotation.MessageModel;

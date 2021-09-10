@@ -4,5 +4,8 @@ spring:
   data:
     mongodb:
       uri: mongodb://vagrant:27017/testdb
+    elasticsearch:
+      cluster-name: es-itcast-cluster
+      cluster-nodes: vagrant:9300,vagrant:9301,vagrant:9302
 server:
   port: 18081

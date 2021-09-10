@@ -1,9 +1,8 @@
 package com.carsonlius.haoke.test;
 
-import com.carsonlis.haoke.im.dao.MessageDao;
-import com.carsonlis.haoke.im.pojo.Message;
-import com.carsonlis.haoke.im.pojo.User;
-import com.carsonlis.haoke.im.service.MessageService;
+import com.carsonlius.haoke.im.pojo.Message;
+import com.carsonlius.haoke.im.pojo.User;
+import com.carsonlius.haoke.im.service.MessageService;
 import org.bson.types.ObjectId;
 import org.junit.Test;
 import org.junit.runner.RunWith;

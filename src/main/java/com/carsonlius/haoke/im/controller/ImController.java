@@ -1,14 +1,13 @@
-package com.carsonlis.haoke.im.controller;
+package com.carsonlius.haoke.im.controller;
 
-import com.carsonlis.haoke.im.pojo.Message;
-import com.carsonlis.haoke.im.pojo.User;
-import com.carsonlis.haoke.im.service.MessageService;
+import com.carsonlius.haoke.im.pojo.Message;
+import com.carsonlius.haoke.im.pojo.User;
+import com.carsonlius.haoke.im.service.MessageService;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.PostConstruct;
 import java.util.Date;
 import java.util.List;
 

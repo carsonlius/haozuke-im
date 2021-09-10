@@ -1,4 +1,4 @@
-package com.carsonlis.haoke.im.pojo;
+package com.carsonlius.haoke.im.pojo;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -8,5 +8,8 @@ spring:
     nameServer: vagrant:9876;vagrant:9877
     producer:
       group: haoke-im-websocket-group
+    elasticsearch:
+      cluster-name: es-itcast-cluster
+      cluster-nodes: vagrant:9300,vagrant:9301,vagrant:9302
 server:
   port: 18081
